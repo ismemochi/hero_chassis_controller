@@ -1,1 +1,1 @@
-subscriber_topic: /temperature
+subscriber_topic: /temperature  pid_controller: true
