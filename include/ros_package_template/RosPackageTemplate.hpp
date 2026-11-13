@@ -63,4 +63,4 @@ class RosPackageTemplate {
   Algorithm algorithm_;
 };
 
-} /* namespace */
+}  // namespace ros_package_template
