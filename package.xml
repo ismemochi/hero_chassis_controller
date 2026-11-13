@@ -1,20 +1,16 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>hero_chassis_controller</name>
-  <version>0.1.0</version>
-  <description>A template for ROS packages.</description>
-  <maintainer email="liaoqiayuan@gmail.com">Qiayuan Liao</maintainer>
+  <version>0.0.0</version>
+  <description>The hero chassis controller package.</description>
+  <maintainer email="zshh_2025@qq.com">ismemochi</maintainer>
   <license>BSD</license>
-  <author email="liaoqiayuan@gmail.com">Qiayuan Liao</author>
 
-  <!-- buildtool_depend: dependencies of the build process -->
   <buildtool_depend>catkin</buildtool_depend>
-  <!-- build_depend: dependencies only used in source files -->
-  <build_depend>boost</build_depend>
-  <!-- depend: build, export, and execution dependency -->
-  <depend>eigen</depend>
   <depend>roscpp</depend>
-  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>control_toolbox</depend>
 
-  <build_depend>roslint</build_depend>
+  <export>
+  </export>
 </package>
