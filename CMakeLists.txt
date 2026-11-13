@@ -5,12 +5,14 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   control_toolbox
+  nav_msgs
+  tf
 )
 
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS roscpp std_msgs control_toolbox
+  CATKIN_DEPENDS roscpp std_msgs control_toolbox nav_msgs tf
 )
 
 include_directories(
@@ -23,5 +25,4 @@ add_executable(hero_chassis_controller
   src/RosPackageTemplate.cpp
 )
 
-# 只要这一句 ${catkin_LIBRARIES}，就能把 control_toolbox 完美链接进来！
 target_link_libraries(hero_chassis_controller ${catkin_LIBRARIES})
